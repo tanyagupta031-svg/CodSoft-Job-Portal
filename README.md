@@ -1,4 +1,4 @@
-# JSTACK-Job-Portal-Website-By-Tech2etc
+# Job Portal Website
 
 Welcome to JSTACK, a job portal website project aimed at helping job seekers and employers connect efficiently. This repository contains all the necessary files and resources to build and deploy the JSTACK website.
 
