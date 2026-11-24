@@ -6,262 +6,730 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JSTACK - Search Jobs</title>
         <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     </head>
 
     <body>
 
-        <!-- Header  Section-->
+
+        <!-- Header Section -->
         <header>
             <div id="navbar" class="obj-width">
-                <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+
+                <a href="#home" class="logo-link"><img class="logo" src="images/logo.png" alt="JSTACK Logo">
+                </a>
 
                 <ul id="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Browse Jobs</a></li>
-                    <li><a href="">Contact</a></li>
-                    <button id="w-btn">Join</button>                
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#jobs">Browse Jobs</a></li>
+                    <li><a class="nav-link" href="#team">Freelancers</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li>
+                        <button id="w-btn" type="button">Join Now</button>
+                    </li>
                 </ul>
 
-                <i id="bar" class='bx bx-menu'></i>
+                <i id="bar" class="bx bx-menu"></i>
             </div>
         </header>
 
-        <!-- Hero  Section-->
+        <!-- Hero Section -->
+        <section class="hero" id="home">
 
-        <section class="hero">
             <div class="hero-box obj-width">
+
                 <div class="h-left">
+
+                    <span class="hero-tag">
+                        <i class="bx bx-briefcase"></i>
+                        Your Career Starts Here
+                    </span>
+
                     <h1>
-                        Find the perfect freelance services for your business.
+                        Find Your <span>Dream Job</span> And Build Your Future.
                     </h1>
+
                     <p>
-                        Work with talentes people at the most affordable price to get the most out of your time and cost.
+                        Discover exciting career opportunities, connect with
+                        top companies, and find the perfect job that matches
+                        your skills and ambitions.
                     </p>
+
+
+                    <!-- Job Search Bar -->
+
                     <div class="search">
-                        <input type="text" placeholder="Search your job here..">
-                        <a id="g-btn" href="#">Search</a>
+
+                        <i class="bx bx-search search-icon"></i>
+
+                        <input
+                            type="text"
+                            id="jobSearchInput"
+                            placeholder="Job title, company or keyword..."
+                        >
+
+                        <button type="button" id="heroSearchBtn">
+                            Search Jobs
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+
                     </div>
+
+                    <!-- Popular Searches -->
+                    <div class="popular-searches">
+
+                        <span>Popular:</span>
+
+                        <button type="button" class="search-tag" data-search="Web Developer">
+                            Web Developer
+                        </button>
+
+                        <button type="button" class="search-tag" data-search="Designer">
+                            Designer
+                        </button>
+
+                        <button type="button" class="search-tag" data-search="Marketing">
+                            Marketing
+                        </button>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <h3>10K+</h3>
+                            <p>Active Jobs</p>
+                        </div>
+
+                        <div>
+                            <h3>5K+</h3>
+                            <p>Companies</p>
+                        </div>
+
+                        <div>
+                            <h3>20K+</h3>
+                            <p>Job Seekers</p>
+                        </div>
+
+                    </div>
+
                 </div>
+
                 <div class="h-right">
-                    <img src="images/hero1.PNG " alt="">
+
+                    <img
+                        src="images/hero1.PNG"
+                        alt="Find your dream job"
+                    >
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Features  Section-->
+        <!-- Features Section -->
 
-        <section class="features sec-space obj-width">
-            <h2>Need something done ? </h2>
-            <p>Most viewed and all-time top-selling services</p>
+        <section class="features sec-space obj-width" id="features">
+
+            <div class="section-heading">
+                <span class="section-tag">HOW IT WORKS</span>
+                <h2>Find Your Perfect Career Match</h2>
+                <p>Everything you need to make your job search simple and successful.</p>
+            </div>
 
             <div class="fe-box">
-                <div>
-                    <img src="images/fe 1.png" alt="">
-                    <h3>Post a job</h3>
-                    <p>It's free and easy to post a job. Simply fill in a title, description.</p>
+
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bx bx-search-alt"></i>
+                    </div>
+
+                    <h3>Explore Opportunities</h3>
+
+                    <p>
+                        Discover thousands of job opportunities that match
+                        your skills, interests and career goals.
+                    </p>
+
+                    <a href="#jobs">Explore Jobs <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
-                <div>
-                    <img src="images/fe 2.png" alt="">
-                    <h3>Choose freelancers</h3>
-                    <p>It's free and easy to post a job. Simply fill in a title, description.</p>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bx bx-user-check"></i>
+                    </div>
+
+                    <h3>Connect with Employers</h3>
+
+                    <p>
+                        Connect with leading companies and find employers
+                        who are looking for talented professionals.
+                    </p>
+
+                    <a href="#jobs">Find Employers <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
-                <div>
-                    <img src="images/fe 3.png" alt="">
-                    <h3>Pay safely</h3>
-                    <p>It's free and easy to post a job. Simply fill in a title, description.</p>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bx bx-paper-plane"></i>
+                    </div>
+
+                    <h3>Apply with Ease</h3>
+
+                    <p>
+                        Apply for your preferred jobs through a simple
+                        and convenient application process.
+                    </p>
+
+                    <a href="#jobs">Apply Now <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
-                <div>
-                    <img src="images/fe 4.png" alt="">
-                    <h3>We're here to help</h3>
-                    <p>It's free and easy to post a job. Simply fill in a title, description.</p>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bx bx-support"></i>
+                    </div>
+
+                    <h3>Career Assistance</h3>
+
+                    <p>
+                        Get helpful resources and guidance to make
+                        better career decisions and grow professionally.
+                    </p>
+
+                    <a href="#contact">Get Support <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Job Listing  Section-->
-        <section class="jobs sec-space obj-width">
-            <h2>Jobs in demand</h2>
-            <p>Most viewed and all-time top-selling services</p>
+
+        <!-- Job Listing Section -->
+
+        <section class="jobs sec-space obj-width" id="jobs">
+
+            <div class="section-heading">
+                <span class="section-tag">EXPLORE CAREERS</span>
+                <h2>Find Your Next Opportunity</h2>
+                <p>Explore the latest opportunities from leading companies.</p>
+            </div>
+
+            <!-- Job Categories -->
 
             <ul class="job-id">
-                <li data-target="all" class="active">Recent Jobs</li>
-                <li data-target="freelancer">Freelancer</li>
+                <li data-target="all" class="active">All Jobs</li>
                 <li data-target="fullTime">Full Time</li>
                 <li data-target="partTime">Part Time</li>
+                <li data-target="freelancer">Freelancer</li>
+                <li data-target="internship">Internship</li>
+                <li data-target="saved">Saved Jobs</li>
             </ul>
 
+            <!-- Job Cards Container -->
+
             <div class="jobs-container">
-                <li data-item="fulltime" class="jList">
-                    <img src="images/google.png" alt="">
+                <p id="noJobsMessage" class="no-jobs-message">
+                    No jobs found. Try searching for something else.
+                </p>
+
+                <!-- Job 1 -->
+
+                <div class="jList" data-item="fullTime" data-job-id="google-web-developer">
+
+                    <div class="job-top">
+                        <img src="images/google.png" alt="Google Logo">
+
+                        <button class="save-job" type="button" aria-label="Save Google job">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
                     <h3>Web Developer</h3>
-                    <p>₹20,000 - ₹30,000/m</p>
-                    <span id="key">Full Time</span>
-                </li>
-                <li data-item="freelancer" class="jList">
-                    <img src="images/uber.png" alt="">
-                    <h3>Freelancer</h3>
-                    <p>₹25,000 - ₹35,000/m</p>
-                    <span id="key">Freelancer</span>
-                </li>
-                <li data-item="partTime" class="jList">
-                    <img src="images/linkedin.png" alt="">
+                    <p class="company-name">Google</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Bangalore</span>
+                        <span><i class="bx bx-time"></i> Full Time</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹20,000 - ₹30,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Job 2 -->
+
+                <div class="jList" data-item="freelancer" data-job-id="uber-freelance-developer">
+
+                    <div class="job-top">
+                        <img src="images/uber.png" alt="Uber Logo">
+
+                        <button class="save-job" type="button" aria-label="Save freelancer job">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <h3>Freelance Developer</h3>
+                    <p class="company-name">Uber</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Remote</span>
+                        <span><i class="bx bx-time"></i> Freelancer</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹25,000 - ₹35,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Job 3 -->
+
+                <div class="jList" data-item="partTime" data-job-id="linkedin-business-associate">
+
+                    <div class="job-top">
+                        <img src="images/linkedin.png" alt="LinkedIn Logo">
+
+                        <button class="save-job" type="button" aria-label="Save business associate job">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
                     <h3>Business Associate</h3>
-                    <p>₹35,000 - ₹40,000/m</p>
-                    <span id="key">Part Time</span>
-                </li>
-                <li data-item="fullTime" class="jList">
-                    <img src="images/facebook.png" alt="">
+                    <p class="company-name">LinkedIn</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Delhi</span>
+                        <span><i class="bx bx-time"></i> Part Time</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹35,000 - ₹40,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Job 4 -->
+
+                <div class="jList" data-item="fullTime" data-job-id="facebook-digital-marketing">
+
+                    <div class="job-top">
+                        <img src="images/facebook.png" alt="Facebook Logo">
+
+                        <button class="save-job" type="button" aria-label="Save marketing job">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
                     <h3>Digital Marketing</h3>
-                    <p>₹21,000 - ₹25,000/m</p>
-                    <span id="key">Full Time</span>
-                </li>
-                <li data-item="partTime" class="jList">
-                    <img src="images/yahoo.png" alt="">
-                    <h3>USer Experience</h3>
-                    <p>₹15,000 - ₹20,000/m</p>
-                    <span id="key">Part Time</span>
-                </li>
+                    <p class="company-name">Facebook</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Mumbai</span>
+                        <span><i class="bx bx-time"></i> Full Time</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹21,000 - ₹25,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Job 5 -->
+
+                <div class="jList" data-item="partTime" data-job-id="yahoo-ui-ux-designer">
+
+                    <div class="job-top">
+                        <img src="images/yahoo.png" alt="Yahoo Logo">
+
+                        <button class="save-job" type="button" aria-label="Save UX job">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <h3>UI/UX Designer</h3>
+                    <p class="company-name">Yahoo</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Remote</span>
+                        <span><i class="bx bx-time"></i> Part Time</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹15,000 - ₹20,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Job 6 -->
+
+                <div class="jList" data-item="internship" data-job-id="google-software-intern">
+
+                    <div class="job-top">
+                        <img src="images/google.png" alt="Google Logo">
+
+                        <button class="save-job" type="button" aria-label="Save internship">
+                            <i class="bx bx-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <h3>Software Developer Intern</h3>
+                    <p class="company-name">Google</p>
+
+                    <div class="job-details">
+                        <span><i class="bx bx-map"></i> Remote</span>
+                        <span><i class="bx bx-time"></i> Internship</span>
+                    </div>
+
+                    <div class="job-bottom">
+                        <div>
+                            <h4>₹10,000 - ₹15,000</h4>
+                            <p>Per Month</p>
+                        </div>
+
+                        <button class="apply-btn" type="button">Apply Now</button>
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
 
-        <!-- Brand  Section-->
 
-        <section class="truest sec-space obj-width">
-            <h2>Trusted by the world's best</h2>
-            <p>Most viewed and all-time top-selling services </p>
+        <!-- Trusted Companies Section -->
+
+        <section class="trust sec-space obj-width">
+
+            <div class="section-heading">
+                <span class="section-tag">OUR PARTNERS</span>
+                <h2>Connecting You With Leading Companies</h2>
+                <p>Explore career opportunities from companies shaping the future.</p>
+            </div>
 
             <div class="t-box">
-                <img src="images/t1.png" alt="">
-                <img src="images/t2.png" alt="">
-                <img src="images/t3.png" alt="">
-                <img src="images/t4.png" alt="">
-                <img src="images/t6.png" alt="">
+
+                <div class="brand-card">
+                    <img src="images/t1.png" alt="Company Logo">
+                </div>
+
+                <div class="brand-card">
+                    <img src="images/t2.png" alt="Company Logo">
+                </div>
+
+                <div class="brand-card">
+                    <img src="images/t3.png" alt="Company Logo">
+                </div>
+
+                <div class="brand-card">
+                    <img src="images/t4.png" alt="Company Logo">
+                </div>
+
+                <div class="brand-card">
+                    <img src="images/t6.png" alt="Company Logo">
+                </div>
+
             </div>
+
         </section>
 
-        <!-- Team  Section-->
 
-        <section class="team sec-space obj-width">
-            <h2>Highest Rated Freelancers</h2>
-            <p>Most viewed and all-time top-selling services</p>
+        <!-- Freelancers Section -->
+
+        <section class="team sec-space obj-width" id="team">
+
+            <div class="section-heading">
+                <span class="section-tag">MEET THE TALENT</span>
+                <h2>Discover Top Freelancers</h2>
+                <p>Connect with skilled professionals ready to bring your ideas to life.</p>
+            </div>
 
             <div class="team-container">
+
+                <!-- Freelancer 1 -->
                 <div class="fl-box">
-                    <img src="images/fl-1.png" alt="">
+                    <img src="images/fl-1.png" alt="Robert Fox">
+
                     <h3>Robert Fox</h3>
-                    <div class="skill">
-                        <span id="key">HTML</span>
-                        <span id="key">CSS</span>
-                        <span id="key">JS</span>
+                    <p class="freelancer-role">Frontend Developer</p>
+
+                    <div class="freelancer-rating">
+                        <i class="bx bxs-star"></i> 4.9
+                        <span>(120 reviews)</span>
                     </div>
 
-                    <a href="#" id="g-btn">View Profile</a>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <p class="freelancer-experience">3+ Years Experience</p>
+
+                    <a href="#" class="g-btn">View Profile</a>
                 </div>
 
+                <!-- Freelancer 2 -->
                 <div class="fl-box">
-                    <img src="images/fl-2.png" alt="">
+                    <img src="images/fl-2.png" alt="Kriston Watson">
+
                     <h3>Kriston Watson</h3>
-                    <div class="skill">
-                        <span id="key">HTML</span>
-                        <span id="key">CSS</span>
-                        <span id="key">JS</span>
+                    <p class="freelancer-role">UI/UX Designer</p>
+
+                    <div class="freelancer-rating">
+                        <i class="bx bxs-star"></i> 4.8
+                        <span>(95 reviews)</span>
                     </div>
 
-                    <a href="#" id="g-btn">View Profile</a>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Design</span>
+                    </div>
+
+                    <p class="freelancer-experience">4+ Years Experience</p>
+
+                    <a href="#" class="g-btn">View Profile</a>
                 </div>
+
+                <!-- Freelancer 3 -->
                 <div class="fl-box">
-                    <img src="images/fl-3.png" alt="">
+                    <img src="images/fl-3.png" alt="Darrell Steward">
+
                     <h3>Darrell Steward</h3>
-                    <div class="skill">
-                        <span id="key">HTML</span>
-                        <span id="key">CSS</span>
-                        <span id="key">JS</span>
+                    <p class="freelancer-role">Backend Developer</p>
+
+                    <div class="freelancer-rating">
+                        <i class="bx bxs-star"></i> 4.9
+                        <span>(110 reviews)</span>
                     </div>
 
-                    <a href="#" id="g-btn">View Profile</a>
+                    <div class="skill">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <p class="freelancer-experience">5+ Years Experience</p>
+
+                    <a href="#" class="g-btn">View Profile</a>
                 </div>
+
+                <!-- Freelancer 4 -->
                 <div class="fl-box">
-                    <img src="images/fl-4.png" alt="">
+                    <img src="images/fl-4.png" alt="Theresa Webb">
+
                     <h3>Theresa Webb</h3>
-                    <div class="skill">
-                        <span id="key">HTML</span>
-                        <span id="key">CSS</span>
-                        <span id="key">JS</span>
+                    <p class="freelancer-role">Digital Marketer</p>
+
+                    <div class="freelancer-rating">
+                        <i class="bx bxs-star"></i> 4.7
+                        <span>(85 reviews)</span>
                     </div>
 
-                    <a href="#" id="g-btn">View Profile</a>
+                    <div class="skill">
+                        <span>SEO</span>
+                        <span>Marketing</span>
+                        <span>Analytics</span>
+                    </div>
+
+                    <p class="freelancer-experience">3+ Years Experience</p>
+
+                    <a href="#" class="g-btn">View Profile</a>
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Footer  Section-->
 
-        <footer class="footer">
+        <!-- Footer Section -->
+
+        <footer class="footer" id="contact">
+
             <div class="obj-width">
-                <div class="top">
-                    <div>
-                        <img class="logo" src="images/logo.png" alt="">
-                        <p>Search your desiered jobs.</p>
+
+                <div class="footer-top">
+
+                    <div class="footer-about">
+                        <img class="logo" src="images/logo.png" alt="JSTACK Logo">
+
+                        <p>
+                            Find your dream job, connect with leading companies,
+                            and take the next step in your career with JSTACK.
+                        </p>
+
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"  aria-label="LinkedIn">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="https://www.youtube.com/@Tech2etc/videos">
-                            <i class='bx bxl-facebook-square'></i>
-                        </a>
-                        <a href="https://www.youtube.com/@Tech2etc/videos">
-                            <i class='bx bxl-instagram-alt' ></i>
-                        </a>
-                        <a href="https://www.youtube.com/@Tech2etc/videos">
-                            <i class='bx bxl-behance' ></i>
-                        </a>
-                        <a href="https://www.youtube.com/@Tech2etc/videos">
-                            <i class='bx bxl-twitter' ></i>
-                        </a>
+
+                    <div class="footer-links">
+
+                        <div>
+                            <h3>Explore</h3>
+                            <a href="#home">Home</a>
+                            <a href="#jobs">Browse Jobs</a>
+                            <a href="#team">Freelancers</a>
+                            <a href="#features">How It Works</a>
+                        </div>
+
+                        <div>
+                            <h3>For Job Seekers</h3>
+                            <a href="#jobs">Find Jobs</a>
+                            <a href="#jobs">Saved Jobs</a>
+                            <a href="#jobs">Apply for Jobs</a>
+                            <a href="#home">Join JSTACK</a>
+                        </div>
+
+                        <div>
+                            <h3>Contact Us</h3>
+                            <a href="mailto:support@jstack.com">support@jstack.com</a>
+                            <a href="#contact">Help & Support</a>
+                            <a href="#contact">Feedback</a>
+                        </div>
+
                     </div>
+
                 </div>
-                <div class="bottom">
-                    <div>
-                        <h3>
-                            Project
-                        </h3>
-                        <a href="#">Changelog</a>
-                        <a href="#">Status</a>
-                        <a href="#">Licence</a>
-                        <a href="#">All Version</a>
-                    </div>
-                    <div>
-                        <h3>
-                            Community
-                        </h3>
-                        <a href="#">GitHub</a>
-                        <a href="#">Issues</a>
-                        <a href="#">Project</a>
-                        <a href="#">Twitter</a>
-                    </div>
-                    <div>
-                        <h3>
-                            Help
-                        </h3>
-                        <a href="#">Support</a>
-                        <a href="#">Troubleshooting</a>
-                        <a href="#">Contact Us</a>
-                    </div>
-                    <div>
-                        <h3>
-                            Others
-                        </h3>
-                        <a href="#">Terms of Services</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Licence</a>
-                    </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 JSTACK. All Rights Reserved.</p>
+                    <p>Designed with care for your career.</p>
                 </div>
+
             </div>
 
         </footer>
 
+        <!-- Job Application Modal -->
+        <div id="applyModal" class="modal">
+            <div class="modal-content">
+
+                <span class="close-modal" id="closeApplyModal">&times;</span>
+
+                <h2>Apply for Job</h2>
+                <p>Fill in your details to submit your application.</p>
+
+                <form id="applyForm">
+
+                    <label>Job Position</label>
+                    <input type="text" id="applyJobTitle" readonly>
+
+                    <label>Full Name</label>
+                    <input type="text" id="applicantName" placeholder="Enter your full name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" id="applicantEmail" placeholder="Enter your email" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" id="applicantPhone" placeholder="Enter your phone number" pattern="[0-9]{10}" maxlength="10" required>
+
+                    <label>Resume Link</label>
+                    <input type="url" id="applicantResume" placeholder="Paste your resume link" required>
+
+                    <button type="submit" class="submit-application">
+                        Submit Application
+                    </button>
+
+                </form>
+
+                <p id="applicationMessage"></p>
+
+            </div>
+        </div>
+
+        <!-- Join Now Registration Modal -->
+
+        <div id="joinModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close-modal" id="closeJoinModal">&times;</span>
+
+                <h2>Create Your Account</h2>
+                <p>Join JSTACK and explore exciting career opportunities.</p>
+
+                <form id="joinForm">
+
+                    <label>Full Name</label>
+                    <input type="text" id="joinName" placeholder="Enter your full name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" id="joinEmail" placeholder="Enter your email" required>
+
+                    <label>Password</label>
+                    <input type="password" id="joinPassword" placeholder="Create a password" minlength="6" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+                    <button type="submit" class="submit-application">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p id="joinMessage"></p>
+
+            </div>
+
+        </div>
+
         <script src="script.js"></script>
         <script src="toggle.js"></script>
+
     </body>
 
 </html>
